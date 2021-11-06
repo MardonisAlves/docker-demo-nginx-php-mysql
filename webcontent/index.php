@@ -26,11 +26,7 @@
      print $row['email'] . "<br />";
  }
 
- $lines = file('README.md');
  
- foreach ($lines as $line) {
-   echo "$line";
-}
  ?> 
  </body>
 </html>
