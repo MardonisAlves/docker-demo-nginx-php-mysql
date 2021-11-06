@@ -21,7 +21,7 @@ services:
  # Php-fpm configuration
   php:
     build:
-     context: ./nginx
+     context: ./dockerfile
     volumes:
       - ./webcontent:/var/www/html
       - ./php:/usr/local/etc/php/php.ini
