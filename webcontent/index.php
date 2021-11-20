@@ -5,7 +5,7 @@
  </head>
  <body>
  <?php  
- $servername = "docker-mysql-demo"; // AQUI é nome do container docker mysql
+ $servername = "172.17.0.2"; // AQUI é nome do container docker mysql
  $username = "root";
  $password = "root123";
  $dbname = "docker_demo";
@@ -20,11 +20,11 @@
  }
 
 
- $sql = 'SELECT * FROM  users';
- foreach ($conn->query($sql) as $row) {
-     print $row['name'] . "<br />";
-     print $row['email'] . "<br />";
- }
+//  $sql = 'SELECT * FROM  users';
+//  foreach ($conn->query($sql) as $row) {
+//      print $row['name'] . "<br />";
+//      print $row['email'] . "<br />";
+//  }
 
  
  ?> 
